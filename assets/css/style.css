@@ -837,7 +837,7 @@ html[dir=ltr] .swiper-button-next::after {
 .heading .title {
   font-size: 20px;
   font-weight: 700;
-  color: var(--primary-color);
+  color: #D6B14D;
   margin-bottom: 24px;
 }
 .heading .desc {
@@ -889,8 +889,8 @@ html[dir=ltr] .swiper-button-next::after {
   overflow: hidden;
   width: 50px;
   height: 50px;
-  background: rgba(0, 165, 226, 0.1);
-  border: 1px solid rgba(0, 165, 226, 0.2);
+  background: rgba(214, 177, 77, 0.1);
+  border: 1px solid rgba(214, 177, 77, 0.2);
   position: relative;
   display: flex;
   align-items: center;
@@ -907,7 +907,7 @@ html[dir=ltr] .swiper-button-next::after {
   display: block;
   width: 20px;
   height: 2px;
-  background: var(--primary-color);
+  background: #D6B14D;
   border-radius: 5px;
   transition: all 0.6s;
 }
@@ -1027,8 +1027,8 @@ html[dir=ltr] .swiper-button-next::after {
   width: fit-content;
 }
 .navbar .contain .navbar-nav .nav-item .nav-link:hover, .navbar .contain .navbar-nav .nav-item .nav-link.active {
-  color: var(--primary-color);
-  background-color: #e5f0f7;
+  color: #D6B14D;
+  background-color: rgba(214, 177, 77, 0.1);
 }
 .navbar .contain .lang-btn {
   width: 50px;
@@ -1097,7 +1097,7 @@ header .contain .sub-title {
 header .contain .title {
   font-size: 44px;
   font-weight: 900;
-  color: var(--light-color);
+  color: #D6B14D;
   margin: 0px;
 }
 @media (max-width: 992px) {
