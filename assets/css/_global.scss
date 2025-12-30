@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "Alexandria";
+    src: url('../fonts/Alexandria/Alexandria-Medium.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Alexandria";
+    src: url('../fonts/Alexandria/Alexandria-Regular.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Alexandria";
+    src: url('../fonts/Alexandria/Alexandria-Bold.ttf');
+    font-weight: 900;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Alexandria" , sans-serif ;
+    scroll-behavior: smooth;
+
+    &::selection{
+        background-color: var(--primary-color);
+        color: var(--light-color); 
+    }
+    
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: var(--light-color);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: var(--primary-color); 
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: var(--primary-color); 
+    }
+}
+
+.overflowNone{
+    overflow: hidden;
+}
+
+.btn:focus,
+button:focus,
+input:focus,
+.form-control:focus {
+    outline-width: 0px !important;
+    outline-color: transparent !important;
+    box-shadow: 0 0 0 0 rgba($color: #000000, $alpha: 0);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    outline: none !important;
+    border: 0px !important;
+}
+
+.swiper-pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    .swiper-pagination-bullet {
+      width: 33px;
+      height: 3px;
+      background-color: rgba($color: #02589F, $alpha: 0.50);
+      border-radius: 2px;
+
+      &.swiper-pagination-bullet-active {
+        opacity: 1 !important;
+        background-color: var(--primary-color);
+      }
+    }
+}
+
+.swiper-button-next, .swiper-button-prev {
+    top: unset;
+    transform: translateY(0px);
+    width: 32px;
+    height: 32px;
+    border: 0px;
+    border: 1px solid #B5B9B9;
+    background-color: #B5B9B9;
+    bottom: 0;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        top: 0;
+        left: 0;
+        background-color: #CCE0EE;
+        transition: all .3s linear;
+    }
+
+    &::after {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: calc(50% - 7.5px);
+        left: calc(50% - 7.5px);
+        z-index: 9;
+        background: url('../images/icons/right_arrow_slide.svg') center / contain no-repeat;
+        color: transparent;
+        filter: var(--gray-filter);
+    }
+
+    &:hover {
+        border-color: var(--primary-color);
+        box-shadow: 0px 0px 10px rgba($color: #202020, $alpha: 0.10);
+        &::before {
+            height: 100%;
+        }
+
+        &::after {
+            filter: var(--primary-filter);
+        }
+    }
+}
+
+.swiper-button-prev {
+    right: calc(50% - 37px) !important;
+    left: unset !important;
+
+
+    &::after {
+        transform: scaleX(1);
+    }
+}
+
+.swiper-button-next {
+    right: unset !important;
+    left: calc(50% - 37px) !important;
+    &::after {
+        transform: scaleX(-1) !important;
+    }
+}
+
+html[dir="ltr"] {
+    .swiper-button-prev {
+        left: calc(50% - 37px) !important;
+        right: unset !important;
+    
+    
+        &::after {
+            transform: scaleX(-1);
+        }
+    }
+    
+    .swiper-button-next {
+        left: unset !important;
+        right: calc(50% - 37px) !important;
+        &::after {
+            transform: scaleX(1) !important;
+        }
+    }
+}
