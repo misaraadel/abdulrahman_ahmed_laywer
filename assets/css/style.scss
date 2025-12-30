@@ -350,7 +350,7 @@
   .title {
     font-size: 20px;
     font-weight: 700;
-    color: #D6B14D;
+    color: #d6b14d;
     margin-bottom: 24px;
   }
 
@@ -402,8 +402,8 @@
       overflow: hidden;
       width: 50px;
       height: 50px;
-      background: rgba($color: #D6B14D, $alpha: 0.1);
-      border: 1px solid rgba($color: #D6B14D, $alpha: 0.2);
+      background: rgba($color: #d6b14d, $alpha: 0.1);
+      border: 1px solid rgba($color: #d6b14d, $alpha: 0.2);
       position: relative;
       display: flex;
       align-items: center;
@@ -419,7 +419,7 @@
         display: block;
         width: 20px;
         height: 2px;
-        background: #D6B14D;
+        background: #d6b14d;
         border-radius: 5px;
         transition: all 0.6s;
 
@@ -555,8 +555,8 @@
 
           &:hover,
           &.active {
-            color: #D6B14D;
-            background-color: rgba($color: #D6B14D, $alpha: 0.1);
+            color: #d6b14d;
+            background-color: rgba($color: #d6b14d, $alpha: 0.1);
           }
         }
       }
@@ -600,14 +600,17 @@
 
 header {
   width: 100%;
-  padding: 200px 0px 100px;
   position: relative;
   z-index: 9;
   overflow: hidden;
   background: var(--linear-gradient);
 
-  @include media() {
-    padding: 150px 0px 50px;
+  .swiper-slide {
+    padding: 200px 0px 100px;
+
+    @include media() {
+      padding: 150px 0px 50px;
+    }
   }
 
   .contain {
@@ -628,7 +631,7 @@ header {
     .title {
       font-size: 44px;
       font-weight: 900;
-      color: #D6B14D;
+      color: #d6b14d;
       margin: 0px;
 
       @include media() {
@@ -862,7 +865,7 @@ header {
 
 .why {
   &.no-pattern {
-    &::after, 
+    &::after,
     &::before {
       display: none;
     }
@@ -1748,12 +1751,12 @@ footer {
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background:  url("../images/footer/footer-pattern.svg")
-    center / cover no-repeat;
+    background: url("../images/footer/footer-pattern.svg") center / cover
+      no-repeat;
     animation: translateY 1s linear infinite alternate;
     top: 0;
     left: 0;
@@ -1801,7 +1804,7 @@ footer {
     border-top: 1px solid rgba($color: #ffffff, $alpha: 0.1);
     gap: 10px;
     flex-wrap: wrap;
-    
+
     @include media() {
       margin-top: 30px;
       flex-direction: column;
@@ -1813,7 +1816,7 @@ footer {
     p {
       font-size: 14px;
       font-weight: 500;
-      color: #B5B9B9;
+      color: #b5b9b9;
       margin: 0px;
 
       span {
@@ -1835,7 +1838,7 @@ footer {
       }
 
       span {
-        color: #B5B9B9;
+        color: #b5b9b9;
         font-size: 15px;
         font-weight: 500;
       }
@@ -1872,7 +1875,7 @@ footer {
   padding: 190px 0px 100px;
   position: relative;
   z-index: 9;
-  background: url('../images/intro/sub-header.svg') center / cover no-repeat;
+  background: url("../images/intro/sub-header.svg") center / cover no-repeat;
 
   @include media() {
     padding: 150px 0px 50px;
@@ -1885,7 +1888,7 @@ footer {
     h1 {
       font-size: 24px;
       font-weight: 900;
-      color: var(--light-color);
+      color: #d6b14d;
       margin: 0px;
 
       @include media() {
@@ -1924,7 +1927,7 @@ footer {
   border: 1px solid #e7eded;
   position: relative;
   z-index: 9;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 
   .image-contain {
     width: 100%;
@@ -1935,7 +1938,7 @@ footer {
     img {
       @include imageCover();
       object-position: center;
-      transition: all .3s linear;
+      transition: all 0.3s linear;
     }
   }
 
@@ -2107,7 +2110,6 @@ footer {
   }
 }
 
-
 .pagination-list {
   @include flexCenter();
   gap: 10px;
@@ -2123,15 +2125,15 @@ footer {
       width: 40px;
       height: 40px;
       @include flexCenter();
-      border: 1px solid #E7EDED;
+      border: 1px solid #e7eded;
       border-radius: 50%;
       font-weight: 500;
       color: var(--gray-color);
 
       &.active {
         color: var(--primary-color);
-        border-color: #E5F0F7;
-        background-color: #E5F0F7;
+        border-color: #e5f0f7;
+        background-color: #e5f0f7;
       }
     }
   }

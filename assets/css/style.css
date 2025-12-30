@@ -837,7 +837,7 @@ html[dir=ltr] .swiper-button-next::after {
 .heading .title {
   font-size: 20px;
   font-weight: 700;
-  color: #D6B14D;
+  color: #d6b14d;
   margin-bottom: 24px;
 }
 .heading .desc {
@@ -907,7 +907,7 @@ html[dir=ltr] .swiper-button-next::after {
   display: block;
   width: 20px;
   height: 2px;
-  background: #D6B14D;
+  background: #d6b14d;
   border-radius: 5px;
   transition: all 0.6s;
 }
@@ -1027,7 +1027,7 @@ html[dir=ltr] .swiper-button-next::after {
   width: fit-content;
 }
 .navbar .contain .navbar-nav .nav-item .nav-link:hover, .navbar .contain .navbar-nav .nav-item .nav-link.active {
-  color: #D6B14D;
+  color: #d6b14d;
   background-color: rgba(214, 177, 77, 0.1);
 }
 .navbar .contain .lang-btn {
@@ -1068,14 +1068,16 @@ html[dir=ltr] .swiper-button-next::after {
 
 header {
   width: 100%;
-  padding: 200px 0px 100px;
   position: relative;
   z-index: 9;
   overflow: hidden;
   background: var(--linear-gradient);
 }
+header .swiper-slide {
+  padding: 200px 0px 100px;
+}
 @media (max-width: 992px) {
-  header {
+  header .swiper-slide {
     padding: 150px 0px 50px;
   }
 }
@@ -1097,7 +1099,7 @@ header .contain .sub-title {
 header .contain .title {
   font-size: 44px;
   font-weight: 900;
-  color: #D6B14D;
+  color: #d6b14d;
   margin: 0px;
 }
 @media (max-width: 992px) {
@@ -2252,7 +2254,7 @@ footer .copyrights {
 footer .copyrights p {
   font-size: 14px;
   font-weight: 500;
-  color: #B5B9B9;
+  color: #b5b9b9;
   margin: 0px;
 }
 footer .copyrights p span {
@@ -2274,7 +2276,7 @@ footer .copyrights .techno img {
      object-fit: contain;
 }
 footer .copyrights .techno span {
-  color: #B5B9B9;
+  color: #b5b9b9;
   font-size: 15px;
   font-weight: 500;
 }
@@ -2326,7 +2328,7 @@ html[dir=ltr] .fixed-icon {
 .sub-header .contain h1 {
   font-size: 24px;
   font-weight: 900;
-  color: var(--light-color);
+  color: #d6b14d;
   margin: 0px;
 }
 @media (max-width: 992px) {
@@ -2575,15 +2577,15 @@ html[dir=ltr] .fixed-icon {
   align-items: center;
   align-content: center;
   justify-content: center;
-  border: 1px solid #E7EDED;
+  border: 1px solid #e7eded;
   border-radius: 50%;
   font-weight: 500;
   color: var(--gray-color);
 }
 .pagination-list li a.active {
   color: var(--primary-color);
-  border-color: #E5F0F7;
-  background-color: #E5F0F7;
+  border-color: #e5f0f7;
+  background-color: #e5f0f7;
 }
 
 @media (max-width: 999px) {
